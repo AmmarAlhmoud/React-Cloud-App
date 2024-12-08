@@ -1,0 +1,5 @@
+node_modules/
+firebase.js
+*.env
+.vscode
+.env.local

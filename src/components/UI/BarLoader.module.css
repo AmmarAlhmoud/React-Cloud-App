@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  gap: 1em;
+}
+
+.bar {
+  height: 18px;
+  width: 2px;
+  background-color: #fff;
+}
+
+.dashboard {
+  position: absolute;
+  top: 145px;
+  left: 230px;
+}
+
+.dashboard .bar {
+  background-color: #333;
+}
+
+

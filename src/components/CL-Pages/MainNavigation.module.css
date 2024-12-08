@@ -1,0 +1,68 @@
+.main-2-nav {
+  margin-top: 5em;
+}
+
+.main-2-nav h5,
+.main-3-div h5 {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #968c93;
+}
+
+.main-2-nav article {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.right-sec-list-item {
+  font-size: 0.8rem;
+  height: 3.2rem;
+  width: 10.5rem;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1em;
+  color: #000;
+  background-color: #eee2f0;
+}
+
+.right-sec-list-item span {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  margin-right: 0.3em;
+}
+
+.main-3-div {
+  margin-top: 2em;
+}
+
+.rel {
+  position: relative;
+}
+
+.main-3-div ul {
+  margin-top: 1em;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.main-3-div ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+.main-3-div ul::-webkit-scrollbar-thumb {
+  background-color: #ad9ddc;
+  border-radius: 10px;
+}
+
+.main-3-div ul::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+.active div {
+  background-color: #5445ff;
+}

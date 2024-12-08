@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@200;400;500;600;700&family=Roboto&display=swap");
+
+/* LAYOUT SYTLES */
+.overall-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.main-container {
+  position: relative;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 80px 1fr 260px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  color: white;
+  z-index: 20;
+}
+
+/* BACKGROUND SYTLES */
+
+.main-background-img {
+  padding: 0.2em;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(15px);
+  z-index: 10;
+}
+
+.backdrop-outer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.4);
+  z-index: 15;
+}
+
+/* HEADER SYTLES */
+.header {
+  grid-area: header;
+  padding: 0 4.5em;
+  border-bottom: 5px solid #0e0a23;
+}
+
+.header nav {
+  padding-top: 1.4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  font-size: 2rem;
+  font-family: "Electrolize", sans-serif;
+}
+
+.header-right {
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+
+.header-right-dashboard {
+  width: 200px !important;
+}
+
+/* MAIN SYTLES */
+.main {
+  grid-area: main;
+  padding: 2em 4.5em;
+  display: grid;
+  width: 100%;
+  grid-template-rows: 50px 1fr auto;
+  grid-template-areas:
+    "sec-1"
+    "sec-2"
+    "sec-3";
+  gap: 1em;
+}
+
+.sec-1 {
+  grid-area: sec-1;
+  height: fit-content;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.sec-1 h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sec-1 p {
+  margin-top: 1em;
+}
+
+.sec-2 {
+  grid-area: sec-2;
+  position: relative;
+  margin-top: 8rem;
+  height: fit-content;
+  width: 95%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-self: center;
+  align-items: center;
+}
+
+.image-1 {
+  margin-top: 1em;
+  width: 50%;
+}
+
+.image-2 {
+  position: absolute;
+  top: -165px;
+  left: 358px;
+  z-index: -10;
+  width: 45%;
+}
+
+.image-3 {
+  margin-top: 17rem;
+  width: 80% !important;
+}
+
+.sec-3 {
+  grid-area: sec-3;
+  margin: 5rem 0 10rem 0;
+  max-width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-self: center;
+  align-items: center;
+  gap: 3.5em;
+}
+
+.sec-3 div:first-child {
+  height: 150px;
+}
+
+.sec-3 div:first-child h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+}
+
+.sec-3-header-p {
+  width: 420px;
+}
+
+.sec-3-div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 320px));
+  gap: 2.5em;
+}
+
+.sec-3-sec-div {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 550px));
+  justify-content: center;
+  align-items: center;
+  gap: 2.2em;
+}
+
+.sec-3-sec-div img:nth-child(1) {
+  border-radius: 0.5em;
+}
+
+/* FOOTER SYTLES */
+.footer {
+  grid-area: footer;
+  padding: 2em 13em;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  column-gap: 4em;
+  border-top: 1px solid whitesmoke;
+}
+
+.footer-div-1,
+.footer-div-2 {
+  width: 50%;
+}
+
+.footer-div-1 div {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+.footer-div-2 h5 {
+  margin-bottom: 0.5em;
+}

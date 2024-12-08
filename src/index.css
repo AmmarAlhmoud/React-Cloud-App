@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Roboto&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #f04b4f,
+    #f04b4f,
+    #6352ec,
+    #6352ec
+  );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:any-link {
+  color: inherit;
+}
+
+a:is(:hover, :focus) {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+li {
+  list-style: none;
+}
+

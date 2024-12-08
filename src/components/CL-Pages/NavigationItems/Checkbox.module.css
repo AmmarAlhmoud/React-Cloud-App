@@ -1,0 +1,42 @@
+.checkbox-container > input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #f0f0f0; /* Replace with desired unchecked color */
+  display: inline-block;
+  vertical-align: middle;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute; /* Absolute positioning */
+  top: 5px;
+  left: 5px;
+  z-index: 15;
+  cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+.checkmark:hover {
+  background-color: rgba(250, 246, 246, 0.7); /* opacity to your preference */
+}
+
+.checkmark::before {
+  content: "";
+  width: 6px;
+  height: 11px;
+  border-top: 2px solid #000000; /* Replace with desired checkmark color */
+  border-left: 2px solid #000000; /* Replace with desired checkmark color */
+  transform: rotate(-150deg); /* Rotate 45 degrees clockwise */
+  position: absolute;
+  top: 74%;
+  left: 48%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  transform-origin: 0% 0%; /* Adjust transform origin */
+}
+
+.checkbox-container > input:checked + .checkmark::before {
+  opacity: 1;
+}
